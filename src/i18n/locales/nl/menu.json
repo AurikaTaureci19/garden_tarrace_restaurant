@@ -1,0 +1,42 @@
+{
+  "title": "The Garden Terrace Restaurant",
+  "heading": "Ons menu",
+  "emptyState": "Er zijn geen gerechten in deze categorie.",
+  "categories": {
+    "toate": "Alle",
+    "aperitive": "Voorgerechten",
+    "principale": "Hoofdgerechten",
+    "garnituri": "Bijgerechten & Soepen",
+    "bauturi": "Dranken",
+    "deserturi": "Desserts"
+  },
+  "items": {
+    "1": "Gevulde paprika's",
+    "2": "Caesarsalade met kip",
+    "3": "Salade \"SUBA\"",
+    "4": "Ingelegde komkommers met verse kruiden",
+    "5": "Varkensribbetjes met gebakken aardappel en koolsalade",
+    "6": "Gebraden varkensvlees met zacuscă en aardappelen",
+    "7": "Visfilet met groenten, polenta en champignonsaus",
+    "8": "Mici, gebakken worstje, vlees in spek gewikkeld, gouden aardappelen en komkommersalade",
+    "9": "Vleesschotel (2 personen)",
+    "10": "Visfilet met groenten en aardappelen",
+    "11": "Gebraden kip met champignonsaus en aardappelen",
+    "12": "Vlees op Franse wijze met puree",
+    "13": "Gevulde deegwaren (coltunași) met kip",
+    "14": "Champignonstoofpot met polenta",
+    "15": "Champignons in room met polenta",
+    "16": "Oekraïense soljanka",
+    "17": "Aardappelpannenkoek (deruna) met vlees",
+    "18": "Rode wijn (glas)",
+    "19": "Witte wijn (glas)",
+    "20": "Champagne",
+    "21": "Cappuccino",
+    "22": "Espresso",
+    "23": "Bier (pint)",
+    "24": "Mineraalwater / plat water",
+    "25": "Huisgemaakte limonade",
+    "26": "Pannenkoeken met kaas",
+    "27": "Cheesecake"
+  }
+}

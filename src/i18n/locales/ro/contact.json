@@ -1,0 +1,19 @@
+{
+  "heroTitle": "Contact",
+  "heading": "Informații de contact",
+  "intro": "Suntem aici pentru a vă ajuta să transformați evenimentul dumneavoastră într-o experiență de neuitat. Ne puteți contacta pentru mai multe detalii sau pentru a discuta despre rezervări și oferte personalizate.",
+  "addressLabel": "Adresă",
+  "phoneLabel": "Telefon",
+  "emailLabel": "E-mail",
+  "form": {
+    "title": "Trimite-ne un mesaj",
+    "namePlaceholder": "Nume",
+    "emailPlaceholder": "Email",
+    "messagePlaceholder": "Mesajul tău",
+    "submit": "Trimite",
+    "sending": "Se trimite...",
+    "success": "Mesajul a fost trimis cu succes! Vă vom contacta în curând.",
+    "errorRequired": "Te rugăm să completezi toate câmpurile obligatorii.",
+    "errorSend": "A apărut o eroare la trimitere. Încearcă din nou sau sună-ne direct."
+  }
+}

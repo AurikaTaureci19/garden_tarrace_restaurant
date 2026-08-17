@@ -1,12 +1,15 @@
 import React, { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import "../styles/contact.css";
 import "../styles/contact_responsive.css";
 import contactImg from "../assets/images/contact_A.jpg";
 import Hero from "../components/Hero";
 import Map from "../components/Map";
+import ContactForm from "../components/ContactForm";
 
 
 const Contact = () => {
+    const { t } = useTranslation("contact");
     const mapRef = useRef(null);
 
     const loadGoogleMapsScript = (callback) => {
@@ -75,7 +78,7 @@ const Contact = () => {
     return (
         <>
             <Hero
-                title="Contact"
+                title={t("heroTitle")}
                 image={contactImg}
                 //dark
             />
@@ -83,11 +86,10 @@ const Contact = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-                            <div className="contact_title">Contact info</div>
+                            <div className="contact_title">{t("heading")}</div>
                             <div className="test_text">
                                 <p>
-                                    Suntem aici pentru a vă ajuta să transformați evenimentul dumneavoastră într-o experiență de neuitat.
-                                    Ne puteți contacta pentru mai multe detalii sau pentru a discuta despre rezervări și oferte personalizate.
+                                    {t("intro")}
                                 </p>
                             </div>
                             <div className="contact_logo_container">
@@ -102,21 +104,21 @@ const Contact = () => {
                                     <ul className="contact_list">
                                         <li className="d-flex flex-row align-items-start justify-content-start">
                                             <div>
-                                                <div>Address</div>
+                                                <div>{t("addressLabel")}</div>
                                             </div>
                                             <div>Kruiskouter 4, 1730 Asse, Bruxelles, Belgia</div>
                                         </li>
 
                                         <li className="d-flex flex-row align-items-start justify-content-start">
                                             <div>
-                                                <div>Phone</div>
+                                                <div>{t("phoneLabel")}</div>
                                             </div>
                                             <div>+32 486 277 791</div>
                                         </li>
 
                                         <li className="d-flex flex-row align-items-start justify-content-start">
                                             <div>
-                                                <div>E-mail</div>
+                                                <div>{t("emailLabel")}</div>
                                             </div>
                                             <div>e.gardenterrace@gmail.com</div>
                                         </li>
@@ -168,7 +170,7 @@ const Contact = () => {
                     </div>
             </div>
             </div>
-            {/*<ContactForm/>*/}
+            <ContactForm/>
             {/*<ReservationForm/>*/}
         </>
     );

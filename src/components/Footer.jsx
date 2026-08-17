@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+    const { t } = useTranslation("footer");
     const year = new Date().getFullYear();
 
     return (
@@ -17,7 +19,7 @@ const Footer = () => {
 
                         <div className="copyright">
                             <p style={{ lineHeight: "1.2" }}>
-                                Copyright &copy; {year} All rights reserved
+                                {t("copyright", { year })}
                                 <i className="fa fa-heart-o"></i> {" "}
                             </p>
                         </div>
@@ -27,9 +29,7 @@ const Footer = () => {
                     <div className="col-lg-6 footer_col">
                         <div className="footer_about">
                             <p>
-                                Restaurantul nostru oferă o experiență culinară deosebită,
-                                combinând preparate rafinate cu o atmosferă elegantă.
-                                Vă așteptăm să descoperiți gusturi autentice și servicii de calitate.
+                                {t("aboutParagraph")}
                             </p>
                         </div>
                     </div>
@@ -40,21 +40,21 @@ const Footer = () => {
                             <ul className="list-unstyled">
 
                                 <li className="d-flex flex-row align-items-start">
-                                    <div className="footer_contact_title">Address:</div>
+                                    <div className="footer_contact_title">{t("addressLabel")}</div>
                                     <div className="footer_contact_text ms-2">
                                         Kruiskouter 4, 1730 Asse, Belgia
                                     </div>
                                 </li>
 
                                 <li className="d-flex flex-row align-items-start mt-2">
-                                    <div className="footer_contact_title">Phone:</div>
+                                    <div className="footer_contact_title">{t("phoneLabel")}</div>
                                     <div className="footer_contact_text ms-2">
                                         +32 486 277 791
                                     </div>
                                 </li>
 
                                 <li className="d-flex flex-row align-items-start mt-2">
-                                    <div className="footer_contact_title">Email:</div>
+                                    <div className="footer_contact_title">{t("emailLabel")}</div>
                                     <div className="footer_contact_text ms-2">
                                         e.gardenterrace@gmail.com
                                     </div>

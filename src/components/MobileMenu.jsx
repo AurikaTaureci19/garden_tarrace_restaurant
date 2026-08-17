@@ -1,58 +1,25 @@
-// import React, { useState } from "react";
-// import Hamburger from "./Hamburger";
-// import { Link } from "react-router-dom";
-// import "../styles/menu.css";
-//
-// const MobileMenu = () => {
-//     const [isOpen, setIsOpen] = useState(false);
-//
-//     const toggleMenu = () => {
-//         setIsOpen(!isOpen);
-//     };
-//
-//     return (
-//         <>
-//             <Hamburger isOpen={isOpen} toggleMenu={toggleMenu} />
-//
-//             <div className={`menu ${isOpen ? "active" : ""}`}>
-//                 <div className="menu_content text-center">
-//                     <ul>
-//                         <li><Link to="/">Acasă</Link></li>
-//                         <li><Link to="/about">Despre noi</Link></li>
-//                         <li><Link to="/menu">Meniu</Link></li>
-//                         <li><Link to="/delivery">Livrare</Link></li>
-//                         <li><Link to="/blog">Blog</Link></li>
-//                         <li><Link to="/contact">Contact</Link></li>
-//                     </ul>
-//                 </div>
-//
-//                 <div className="menu_reservations_phone">
-//                     Rezervări: +40 123 456 789
-//                 </div>
-//             </div>
-//         </>
-//     );
-// };
-//
-// export default MobileMenu;
-
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
+
 const MobileMenu = ({ isOpen, closeMenu }) => {
+    const { t } = useTranslation(["common", "header"]);
     return (
         <div className={`menu ${isOpen ? "active" : ""}`}>
             <div className="menu_content d-flex flex-column align-items-center justify-content-center text-center">
                 <ul>
-                    <li><Link to="/" onClick={closeMenu}>Acasă</Link></li>
-                    <li><Link to="/about" onClick={closeMenu}>Despre noi</Link></li>
-                    <li><Link to="/menu" onClick={closeMenu}>Meniu</Link></li>
-                    <li><Link to="/blog" onClick={closeMenu}>Blog</Link></li>
-                    <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+                    <li><Link to="/" onClick={closeMenu}>{t("common:nav.home")}</Link></li>
+                    <li><Link to="/about" onClick={closeMenu}>{t("common:nav.about")}</Link></li>
+                    <li><Link to="/menu" onClick={closeMenu}>{t("common:nav.menu")}</Link></li>
+                    <li><Link to="/blog" onClick={closeMenu}>{t("common:nav.blog")}</Link></li>
+                    <li><Link to="/contact" onClick={closeMenu}>{t("common:nav.contact")}</Link></li>
                 </ul>
+                <LanguageSwitcher />
             </div>
 
             <div className="menu_reservations_phone">
-                Rezervări: +40 123 456 789
+                {t("header:reservationsLabel")} +40 123 456 789
             </div>
         </div>
     );

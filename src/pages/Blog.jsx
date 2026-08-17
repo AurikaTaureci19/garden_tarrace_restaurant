@@ -1,5 +1,6 @@
 // src/pages/Blog.jsx
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 // Import CSS (adaptează căile dacă ai pus fișierele în assets/styles)
 import "../styles/blog.css";
@@ -16,63 +17,18 @@ import blog6 from "../assets/images/blog_6.jpg";
 import reservationsImg from "../assets/images/reservations.jpg";
 
 const blogPosts = [
-    {
-        img: blog1,
-        date: "June 18, 2018",
-        title: "Our Nominee at the Restaurants Awards",
-        author: "George Smith",
-        category: "Lifestyle",
-        comments: 2,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti."
-    },
-    {
-        img: blog2,
-        date: "June 18, 2018",
-        title: "Recipe of the week",
-        author: "George Smith",
-        category: "Lifestyle",
-        comments: 2,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti."
-    },
-    {
-        img: blog3,
-        date: "June 18, 2018",
-        title: "Our Nominee at the Restaurants Awards",
-        author: "George Smith",
-        category: "Lifestyle",
-        comments: 2,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti."
-    },
-    {
-        img: blog4,
-        date: "June 18, 2018",
-        title: "Our Nominee at the Restaurants Awards",
-        author: "George Smith",
-        category: "Lifestyle",
-        comments: 2,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti."
-    },
-    {
-        img: blog5,
-        date: "June 18, 2018",
-        title: "Our Nominee at the Restaurants Awards",
-        author: "George Smith",
-        category: "Lifestyle",
-        comments: 2,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti."
-    },
-    {
-        img: blog6,
-        date: "June 18, 2018",
-        title: "Our Nominee at the Restaurants Awards",
-        author: "George Smith",
-        category: "Lifestyle",
-        comments: 2,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus. Ut non justo eleifend, facilisis nibh ut, interdum odio. Suspendisse potenti."
-    }
+    { img: blog1 },
+    { img: blog2 },
+    { img: blog3 },
+    { img: blog4 },
+    { img: blog5 },
+    { img: blog6 },
 ];
 
 export default function Blog() {
+    const { t } = useTranslation("blog");
+    const personOptions = t("reservations.personOptions", { returnObjects: true });
+
     return (
         <div className="super_container">
             {/* Header */}
@@ -86,7 +42,7 @@ export default function Blog() {
                             <div className="col">
                                 <div className="home_content">
                                     {/*<div className="home_subtitle page_subtitle">The Venue</div>*/}
-                                    <div className="home_title"><h1>Our Blog</h1></div>
+                                    <div className="home_title"><h1>{t("heading")}</h1></div>
                                 </div>
                             </div>
                         </div>
@@ -103,21 +59,16 @@ export default function Blog() {
                                 <div className="blog_post">
                                     <div className="blog_post_image_container">
                                         <div className="blog_post_image">
-                                            <img src={post.img} alt={post.title} />
+                                            <img src={post.img} alt="" />
                                         </div>
-                                        {/*<div className="blog_post_date"><a href="#">{post.date}</a></div>*/}
                                     </div>
                                     <div className="blog_post_content">
-                                        {/*<div className="blog_post_title"><a href="#">{post.title}</a></div>*/}
                                         <div className="blog_post_info">
                                             <ul className="d-flex flex-row align-items-center justify-content-start">
-                                                {/*<li>by <a href="#">{post.author}</a></li>*/}
-                                                {/*<li>in <a href="#">{post.category}</a></li>*/}
-                                                {/*<li><a href="#">{post.comments} Comments</a></li>*/}
                                             </ul>
                                         </div>
                                         <div className="blog_post_text">
-                                            <p>{post.text}</p>
+                                            <p>{t(`posts.${index}`)}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -141,22 +92,22 @@ export default function Blog() {
                     <div className="row">
                         <div className="col">
                             <div className="reservations_content d-flex flex-column align-items-center justify-content-center">
-                                <div className="res_stars page_subtitle">5 Stars</div>
-                                <div className="res_title">Make a Reservation</div>
+                                <div className="res_stars page_subtitle">{t("reservations.stars")}</div>
+                                <div className="res_title">{t("reservations.heading")}</div>
                                 <div className="res_form_container">
                                     <form className="res_form">
                                         <div className="d-flex flex-sm-row flex-column align-items-center justify-content-start">
                                             <input type="text" id="datepicker" className="res_input" required />
                                             <input type="text" className="res_input timepicker" required />
                                             <select className="res_select">
-                                                <option disabled selected>2 person</option>
-                                                <option>3 person</option>
-                                                <option>4 person</option>
-                                                <option>5 person</option>
-                                                <option>6 person</option>
+                                                {personOptions.map((option, i) => (
+                                                    <option key={option} disabled={i === 0} selected={i === 0}>
+                                                        {option}
+                                                    </option>
+                                                ))}
                                             </select>
                                         </div>
-                                        <button className="res_button">Make a Reservation</button>
+                                        <button className="res_button">{t("reservations.submitButton")}</button>
                                     </form>
                                 </div>
                             </div>

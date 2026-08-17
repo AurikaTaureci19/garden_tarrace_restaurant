@@ -126,7 +126,7 @@ p a:hover::after
 }
 p::selection
 {
-	
+
 }
 h1{font-size: 48px;}
 h2{font-size: 36px;}
@@ -142,14 +142,14 @@ h1, h2, h3, h4, h5, h6
 	line-height: 1.2;
 	color: #232323;
 }
-h1::selection, 
-h2::selection, 
-h3::selection, 
-h4::selection, 
-h5::selection, 
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
 h6::selection
 {
-	
+
 }
 .form-control
 {
@@ -273,7 +273,7 @@ section
 }
 .page_subtitle
 {
-	font-family: 'Edward', sans-serif;
+	font-family: 'Great Vibes', sans-serif;
 	color: #b49383;
 	line-height: 0.75;
 }
@@ -405,6 +405,7 @@ section
 	font-size: 16px;
 	font-weight: 700;
 	color: #FFFFFF;
+	white-space: nowrap;
 }
 .hamburger_bar
 {
@@ -655,70 +656,136 @@ section
 	line-height: 54px;
 	color: #c4ab9f;
 }
-.dish_list
-{
-	margin-top: 44px;
+
+.dish {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
 }
-.dish:not(:last-child)
-{
-	margin-bottom: 25px;
+
+/* container imagine mic rotund */
+.dish_image {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 10px;
 }
-.dish_title,
-.dish_price
-{
-	font-size: 18px;
-	color: #232323;
+
+/* imagine controlată */
+.dish_image img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 4px solid rgba(255,255,255,0.1);
 }
-.dish_price
-{
-	margin-left: auto;
-}
-.dish_contents
-{
-	margin-top: 3px;
-}
-.dish_contents ul li
-{
-	font-size: 14px;
-	color: #636363;
-}
-.dish_contents ul li:not(:last-child)::after
-{
-	display: inline-block;
-	content: '/';
-	margin-left: 3px;
-	margin-right: 3px;
-	font-size: 14px;
-	color: #636363;
-}
-.dish_order
-{
-	margin-top: 10px;
-}
-.dish_order a
-{
+
+/* title + price pe același rând */
+.dish_title_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	position: relative;
-	font-size: 18px;
-	color: #b49383;
 }
-.dish_order a::after
-{
-	display: block;
+
+/* linia punctată ca în template */
+.dish_title_container::after {
+	content: "....................................................................................................";
 	position: absolute;
 	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 1px;
-	background: #b49383;
-	content: '';
-	visibility: hidden;
-	opacity: 0;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	color: rgba(255,255,255,0.25);
+	z-index: 0;
+	white-space: nowrap;
+	overflow: hidden;
 }
-.dish_order a:hover::after
-{
-	visibility: visible;
-	opacity: 1;
+
+.dish_title {
+	background: #0c0b09;
+	padding-right: 10px;
+	z-index: 1;
+	font-weight: 600;
 }
+
+.dish_price {
+	background: #0c0b09;
+	padding-left: 10px;
+	z-index: 1;
+	color: #cda45e;
+	font-weight: 600;
+}
+
+/* order link */
+.dish_order {
+	margin-top: 5px;
+	font-size: 13px;
+	opacity: 0.7;
+}
+/*.dish_list*/
+/*{*/
+/*	margin-top: 44px;*/
+/*}*/
+/*.dish:not(:last-child)*/
+/*{*/
+/*	margin-bottom: 25px;*/
+/*}*/
+/*.dish_title,*/
+/*.dish_price*/
+/*{*/
+/*	font-size: 18px;*/
+/*	color: #232323;*/
+/*}*/
+/*.dish_price*/
+/*{*/
+/*	margin-left: auto;*/
+/*}*/
+/*.dish_contents*/
+/*{*/
+/*	margin-top: 3px;*/
+/*}*/
+/*.dish_contents ul li*/
+/*{*/
+/*	font-size: 14px;*/
+/*	color: #636363;*/
+/*}*/
+/*.dish_contents ul li:not(:last-child)::after*/
+/*{*/
+/*	display: inline-block;*/
+/*	content: '/';*/
+/*	margin-left: 3px;*/
+/*	margin-right: 3px;*/
+/*	font-size: 14px;*/
+/*	color: #636363;*/
+/*}*/
+/*.dish_order*/
+/*{*/
+/*	margin-top: 10px;*/
+/*}*/
+/*.dish_order a*/
+/*{*/
+/*	position: relative;*/
+/*	font-size: 18px;*/
+/*	color: #b49383;*/
+/*}*/
+/*.dish_order a::after*/
+/*{*/
+/*	display: block;*/
+/*	position: absolute;*/
+/*	left: 0;*/
+/*	bottom: 0;*/
+/*	width: 100%;*/
+/*	height: 1px;*/
+/*	background: #b49383;*/
+/*	content: '';*/
+/*	visibility: hidden;*/
+/*	opacity: 0;*/
+/*}*/
+/*.dish_order a:hover::after*/
+/*{*/
+/*	visibility: visible;*/
+/*	opacity: 1;*/
+/*}*/
 
 /*********************************
 7. Signature Dishes
@@ -746,7 +813,7 @@ section
 }
 .sig_rating
 {
-	
+
 }
 .rating_r i::before
 {

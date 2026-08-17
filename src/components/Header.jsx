@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import MobileMenu from "./MobileMenu";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = ({ dark }) => {
+    const { t } = useTranslation(["common", "header"]);
     const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
@@ -45,18 +48,21 @@ const Header = ({ dark }) => {
                                 {/* NAVIGATION (desktop) */}
                                 <nav className="main_nav">
                                     <ul className="d-flex flex-row align-items-center justify-content-start">
-                                        <li><Link to="/">Home</Link></li>
-                                        <li><Link to="/about">About</Link></li>
-                                        <li><Link to="/menu">Menu</Link></li>
-                                        <li><Link to="/blog">Blog</Link></li>
-                                        <li><Link to="/contact">Contact</Link></li>
+                                        <li><Link to="/">{t("common:nav.home")}</Link></li>
+                                        <li><Link to="/about">{t("common:nav.about")}</Link></li>
+                                        <li><Link to="/menu">{t("common:nav.menu")}</Link></li>
+                                        <li><Link to="/blog">{t("common:nav.blog")}</Link></li>
+                                        <li><Link to="/contact">{t("common:nav.contact")}</Link></li>
                                     </ul>
                                 </nav>
 
                                 {/* PHONE */}
                                 <div className="reservations_phone ml-auto">
-                                    Reservations: +32 486 277 791
+                                    {t("header:reservationsLabel")} +32 486 277 791
                                 </div>
+
+                                {/* LANGUAGE SWITCHER */}
+                                <LanguageSwitcher />
 
                                 {/* 🔥 HAMBURGER (mobil) */}
                                 <div className="hamburger ml-auto" onClick={toggleMenu}>

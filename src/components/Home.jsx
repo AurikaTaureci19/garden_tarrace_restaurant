@@ -25,7 +25,6 @@ export default function Home() {
                              backgroundImage: `url(${homeImg})`,
                              backgroundSize: "cover",
                              backgroundPosition: "center",
-                             //height: "90vh",
                          }} data-speed="0.8"></div>
                     {/*<div className="home_container">*/}
                     {/*    <div className="container">*/}

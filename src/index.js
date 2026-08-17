@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import './i18n';
 import './styles/bootstrap-4.1.2/bootstrap.min.css';
 import './styles/main_styles.css';
 import './index.css';

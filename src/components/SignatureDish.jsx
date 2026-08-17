@@ -1,8 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import signatureDish from "../assets/images/poza_dish1.jpeg";
 import "../styles/signature.css";
 
 const SignatureDish = () => {
+    const { t } = useTranslation("home");
     return (
         <div className="sig">
 
@@ -21,7 +23,7 @@ const SignatureDish = () => {
                                 {/*    <h1>Preparatul nostru special</h1>*/}
                                 {/*</div>*/}
                                 <div className="intro_subtitle page_subtitle_intro">
-                                   Platou pentru masa festiva.
+                                   {t("signatureDish.subtitle")}
                                 </div>
 
                                 <div className="rating_r sig_rating rating_r_5">
@@ -31,10 +33,7 @@ const SignatureDish = () => {
                                 {/*<div className="sig_name_container d-flex flex-row align-items-start justify-content-start">*/}
                                   <div className="sig_content_list">
                                 <div>
-                                        Un platou tradițional, bogat și apetisant, este așezat cu grijă pe o masă festivă. În centrul lui se află friptură din carne de porc, frumos rumenită, cu o crustă aurie și ușor crocantă. Feliile sunt tăiate uniform, dezvăluind un interior suculent, bine condimentat, în care aromele de usturoi și mirodenii se îmbină perfect.
-                                        Alături, bucăți generoase de șoric proaspăt atrag privirea prin textura lor lucioasă și elastică, fiind ușor sărate și incredibil de fragede.
-                                        Nu lipsesc cârnații bine condimentați, care completează armonios platoul prin culoarea lor apetisantă și aroma intensă.
-                                        Preparatele sunt decorate cu frunze proaspete de pătrunjel și salată verde, iar în mijloc tronează un mic ornament din morcov sculptat, însoțit de o măslină, care adaugă un plus de eleganță și rafinament.
+                                        {t("signatureDish.paragraph")}
                                     </div>
                                 </div>
 

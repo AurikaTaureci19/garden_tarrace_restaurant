@@ -278,7 +278,7 @@ section
 }
 .page_subtitle
 {
-	font-family: 'Edward', sans-serif;
+	font-family: 'Great Vibes', sans-serif;
 	color: #b49383;
 	line-height: 0.75;
 }
@@ -410,6 +410,7 @@ section
 	font-size: 16px;
 	font-weight: 700;
 	color: #FFFFFF;
+	white-space: nowrap;
 }
 .hamburger_bar
 {

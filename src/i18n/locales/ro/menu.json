@@ -1,0 +1,43 @@
+{
+  "title": "The Garden Terrace Restaurant",
+  "heading": "Meniul nostru",
+  "emptyState": "Nu există preparate în această categorie.",
+  "categories": {
+    "toate": "Toate",
+    "aperitive": "Aperitive",
+    "principale": "Feluri principale",
+    "garnituri": "Garnituri & Ciorbe",
+    "bauturi": "Băuturi",
+    "deserturi": "Deserturi"
+  },
+  "items": {
+    "1": "Ardei umpluți",
+    "2": "Salată Cezar cu pui",
+    "3": "Salată „SUBA”",
+    "4": "Castraveți murați cu verdeață",
+    "5": "Costiță de porc cu cartof copt și salată de varză",
+    "6": "Friptură de porc cu zacuscă și cartofi",
+    "7": "File de pește cu legume, mămăligă și sos de ciuperci",
+    "8": "Mici, cârnăcior rumenit, carne învelită în bacon, cartofi aurii și salată de castraveți",
+    "9": "Platou cu carne (2 persoane)",
+    "10": "File de pește cu legume și cartofi",
+    "11": "Friptură de pui cu sos de ciuperci și cartofi",
+    "12": "Carne în stil franțuzesc cu piure",
+    "13": "Coltunași cu pui",
+    "14": "Tocăniță cu ciuperci și mămăligă",
+    "15": "Ciuperci cu smântână și mămăligă",
+    "16": "Borș ucrainesc Soleanka",
+    "17": "Deruna cu carne",
+    "18": "Vin roșu (pahar)",
+    "19": "Vin alb (pahar)",
+    "20": "Șampanie",
+    "21": "Cappuccino",
+    "22": "Espresso",
+    "23": "Bere la halbă",
+    "24": "Apă minerală / plată",
+    "25": "Limonadă de casă",
+    "26": "Clătite cu brânză",
+    "27": "Cheesecake",
+    "28": "Clatite cu ciocolata"
+  }
+}

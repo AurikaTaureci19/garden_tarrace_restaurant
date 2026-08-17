@@ -1,0 +1,34 @@
+.language_switcher {
+	gap: 6px;
+	margin-left: 24px;
+}
+
+.language_switcher .lang_btn {
+	background: transparent;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	padding: 4px 9px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.language_switcher .lang_btn:hover {
+	border-color: #b49383;
+	color: #b49383;
+}
+
+.language_switcher .lang_btn.active {
+	background: #b49383;
+	border-color: #b49383;
+	color: #000000;
+}
+
+.menu_content .language_switcher {
+	margin-left: 0;
+	margin-top: 20px;
+	justify-content: center;
+}

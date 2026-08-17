@@ -1,0 +1,17 @@
+{
+  "heading": "Onze blog",
+  "posts": [
+    "Ontdek het verhaal achter onze signature-gerechten en alles waar we trots op zijn in de keuken van het restaurant.",
+    "Recept van de week: een eenvoudig gerecht om thuis na te maken, geïnspireerd op ons seizoensmenu.",
+    "Kom te weten hoe wij verse ingrediënten selecteren en waarom kwaliteit onze absolute prioriteit blijft.",
+    "Een blik achter de schermen: hoe ons keukenteam elk bijzonder evenement voorbereidt.",
+    "Tips van onze chef om wijn perfect te combineren met de gerechten op het menu.",
+    "Waarom ons terras de ideale plek is voor privé-evenementen en een familiediner."
+  ],
+  "reservations": {
+    "stars": "5 Sterren",
+    "heading": "Maak een reservering",
+    "personOptions": ["2 personen", "3 personen", "4 personen", "5 personen", "6 personen"],
+    "submitButton": "Maak een reservering"
+  }
+}

@@ -176,6 +176,15 @@
 	{
 		width: 150px;
 	}
+	.contact_form_section
+	{
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	.contact_form_title
+	{
+		font-size: 28px;
+	}
 }
 
 /************

@@ -1,0 +1,19 @@
+{
+  "heroTitle": "Contact",
+  "heading": "Contactgegevens",
+  "intro": "Wij staan klaar om u te helpen uw evenement om te zetten in een onvergetelijke ervaring. U kunt contact met ons opnemen voor meer informatie of om reserveringen en gepersonaliseerde aanbiedingen te bespreken.",
+  "addressLabel": "Adres",
+  "phoneLabel": "Telefoon",
+  "emailLabel": "E-mail",
+  "form": {
+    "title": "Stuur ons een bericht",
+    "namePlaceholder": "Naam",
+    "emailPlaceholder": "E-mail",
+    "messagePlaceholder": "Uw bericht",
+    "submit": "Verzenden",
+    "sending": "Versturen...",
+    "success": "Bericht succesvol verzonden! We nemen binnenkort contact met u op.",
+    "errorRequired": "Vul alstublieft alle verplichte velden in.",
+    "errorSend": "Er is een fout opgetreden bij het verzenden. Probeer het opnieuw of bel ons direct."
+  }
+}

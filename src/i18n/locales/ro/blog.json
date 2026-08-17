@@ -1,0 +1,17 @@
+{
+  "heading": "Blogul nostru",
+  "posts": [
+    "Descoperă povestea din spatele preparatelor noastre semnate și tot ce ne face să fim mândri de bucătăria restaurantului.",
+    "Rețeta săptămânii: un preparat simplu de reprodus acasă, inspirat din meniul nostru sezonier.",
+    "Aflați cum selectăm ingredientele proaspete și de ce calitatea rămâne prioritatea noastră numărul unu.",
+    "O privire în culise: cum pregătește echipa noastră de bucătari fiecare eveniment special.",
+    "Sfaturi de la bucătarul nostru pentru a combina perfect vinul cu preparatele din meniu.",
+    "De ce terasa noastră este locul ideal pentru evenimente private și cine în familie."
+  ],
+  "reservations": {
+    "stars": "5 Stele",
+    "heading": "Rezervă o masă",
+    "personOptions": ["2 persoane", "3 persoane", "4 persoane", "5 persoane", "6 persoane"],
+    "submitButton": "Rezervă o masă"
+  }
+}
